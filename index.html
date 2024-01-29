@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Card Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="userForm">
+      <input type="text" id="name" placeholder="Full name" />
+      <input type="tel" id="phone" placeholder="Phone No" />
+      <input type="text" id="email" placeholder="Email" />
+      <input type="text" id="city" placeholder="City name" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div id="userCard">
+      <div id="userData"></div>
+      <div id="editButton" onclick="showForm()">Edit Details</div>
+    </div>
+
+    <button id="toggleThemeButton" onclick="toggleTheme()">Toggle Theme</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

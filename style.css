@@ -1,0 +1,110 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#userForm,
+#userCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+#userCard:hover {
+  transform: scale(1.05);
+}
+
+#editButton:hover {
+  color: #2980b9;
+}
+
+#userForm {
+  transition: opacity 0.3s ease-in-out;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(to right, #2980b9, #1f6696);
+}
+
+#userCard {
+  display: none;
+  margin-top: 20px;
+}
+
+#editButton {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #3498db;
+  text-decoration: underline;
+}
+
+#toggleThemeButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#toggleThemeButton:hover {
+  background-color: #2980b9;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode #userForm,
+body.dark-mode #userCard {
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode input {
+  background-color: #444;
+  border: 1px solid #666;
+  color: #fff;
+}
+
+body.dark-mode input[type="submit"] {
+  background-color: #555;
+}
